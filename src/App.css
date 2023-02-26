@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --span: rgb(255,0,0);
+  --button: rgb(0, 0, 255);
+  --border: rgb(165, 0, 165);
+  --bg:rgb(255, 221, 255);
+  --shadow: rgb(190, 190, 190);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+.App {
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.notification {
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: var(--black);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.form {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+  min-width: 20rem;
+  height: auto;
+  margin: 3rem auto 3rem auto;
+  border-radius: 10px;
+  padding: 1.5rem 5px 10px 5px;
+  border-top: 8px solid var(--border);
+  border-bottom: 5px solid var(--border);
+  box-shadow: 0 8px 18px var(--shadow);
+}
+
+label {
+  font-size: 20px;
+  margin: 15px 2rem 1px 2.2rem;
+}
+
+span{
+  color: var(--span);
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: 0;
+  border-bottom: 1.5px solid var(--black);
+  margin: 1px 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 2px 7px;
+  width: 80%;
+}
+
+input:focus {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border);
+}
+
+select {
+  margin: 7px 2.2rem;
+  width: 80%;
+  padding: 2px 7px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.radio-btn {
+  width: 1rem;
+  margin: 2px 8px 0px 3px;
+  padding: 0;
+}
+
+.gender-label{
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.checkBox{
+  width: 1rem;
+  margin: 15px 8px 5px 1.5rem;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: var(--border);
+  color: var(--white);
+  width: 25%;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 1rem auto;
+  box-shadow: 3px 3px 3px var(--shadow);
+}
+
+.btn:active {
+  box-shadow: 0 var(--white);
+  transform: translate(3px, 3px);
+}
+
+.single-person {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  width: 40%;
+  min-width: fit-content;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+  box-shadow: 0 1px 10px var(--shadow);
+}
+
+.item {
+  text-align: left;
+}
+
+.dlt-btn {
+  background-color: var(--white);
+  color: var(--button);
+  width: fit-content;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px 7px;
+  font-size: 20px;
+  margin-left: 2rem;
+}
+
+.dlt-btn:active {
+  scale: 0.8;
+}

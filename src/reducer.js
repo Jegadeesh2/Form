@@ -13,7 +13,7 @@ const reducer = (state, action) =>{
       return {
         ...state,
         isNotification: true,
-        messageText: `Please fill out all required fields.!`,
+        messageText: `Please fill out all required fields...`
       };
     case "DELETE_USER":
       const remainingStudents = state.students.filter(
@@ -22,7 +22,7 @@ const reducer = (state, action) =>{
         ...state,
         students: remainingStudents,
         isNotification: true,
-        messageText: 'Username Deleted'
+        messageText: ` Your application has been removed.! `
       }
       case "CLOSE_NOTIFICATION" :
         return{

@@ -133,7 +133,7 @@ const Form = () => {
           checked={isChecked}
           onChange={(e) => setIsChecked(e.target.checked)}
         />
-        Terms & Condition. <span> *</span>
+        Terms & Conditions. <span> *</span>
       </p>
         <button type="submit" title="click to submit" className="btn">
           Submit

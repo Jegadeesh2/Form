@@ -12,7 +12,6 @@
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
   --span: rgb(255,0,0);
-  --button: rgb(0, 0, 255);
   --border: rgb(165, 0, 165);
   --bg:rgb(255, 221, 255);
   --shadow: rgb(190, 190, 190);
@@ -134,7 +133,7 @@ select {
   width: 40%;
   min-width: fit-content;
   margin: 2.5rem auto;
-  padding: 10px 1rem 10px 1rem;
+  padding: 12px 1.5rem 8px 1rem;
   background-color: var(--white);
   box-shadow: 0 1px 10px var(--shadow);
   border-radius: 5px;
@@ -146,19 +145,21 @@ select {
 }
 
 .dlt-btn {
+  /* font-family: "Poppins", sans-serif; */
   background-color: var(--white);
-  color: var(--button);
+  color: var(--border);
   width: fit-content;
   border: 0;
   cursor: pointer;
   border-radius: 5px;
   padding: 3px 7px;
-  font-size: 20px;
+  font-size: 21px;
+  font-weight: 600;
   margin-left: 2rem;
 }
 
 .dlt-btn:hover{
-  color: var(--border);
+  color: var(--span);
 }
 
 .dlt-btn:active {
